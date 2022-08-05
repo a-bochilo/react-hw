@@ -9,19 +9,22 @@ export const ABOUT_US_DATA = {
       title: "Awesome Icons",
       subtitle:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor",
-      iconImg: "/img/AboutUsImg/internet.svg",
+      iconImg:
+        "https://github.com/a-bochilo/react-hw/blob/gh-pages/img/AboutUsImg/internet.svg",
     },
     {
       title: "One Page",
       subtitle:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor",
-      iconImg: "/img/AboutUsImg/transfer.svg",
+      iconImg:
+        "https://github.com/a-bochilo/react-hw/blob/gh-pages/img/AboutUsImg/transfer.svg",
     },
     {
       title: "Awesome Icons",
       subtitle:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor",
-      iconImg: "/img/AboutUsImg/head.svg",
+      iconImg:
+        "https://github.com/a-bochilo/react-hw/blob/gh-pages/img/AboutUsImg/head.svg",
     },
   ],
 };
