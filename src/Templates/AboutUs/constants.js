@@ -9,8 +9,7 @@ export const ABOUT_US_DATA = {
       title: "Awesome Icons",
       subtitle:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor",
-      iconImg:
-        "https://github.com/a-bochilo/react-hw/blob/gh-pages/img/AboutUsImg/internet.svg",
+      iconImg: "/img/AboutUsImg/internet.jpg",
     },
     {
       title: "One Page",
