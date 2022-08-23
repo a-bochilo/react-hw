@@ -2,9 +2,7 @@ import React from "react";
 
 import "./styles.scss";
 
-const Button = (props) => {
-  const { btnLabel, btnClass, onClickFunc } = props;
-
+const ButtonComponent = ({ btnLabel, btnClass, onClickFunc }) => {
   return (
     <button className={btnClass} onClick={onClickFunc}>
       {btnLabel}
@@ -12,4 +10,4 @@ const Button = (props) => {
   );
 };
 
-export default Button;
+export default ButtonComponent;
