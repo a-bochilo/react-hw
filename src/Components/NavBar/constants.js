@@ -2,36 +2,36 @@ export const NAV_BAR_DATA = [
   {
     id: 0,
     label: "Home",
-    url: "/",
+    url: "react-hw/",
   },
   {
     id: 1,
     label: "About",
-    url: "/about",
+    url: "react-hw/about",
   },
   {
     id: 2,
     label: "Servicing",
-    url: "/servicing",
+    url: "react-hw/servicing",
   },
   {
     id: 3,
     label: "Pricing",
-    url: "/pricing",
+    url: "react-hw/pricing",
   },
   {
     id: 4,
     label: "Team",
-    url: "/team",
+    url: "react-hw/team",
   },
   {
     id: 5,
     label: "Blog",
-    url: "/blog",
+    url: "react-hw/blog",
   },
   {
     id: 6,
     label: "Contact us",
-    url: "/contact-us",
+    url: "react-hw/contact-us",
   },
 ];
