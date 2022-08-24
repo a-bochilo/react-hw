@@ -2,6 +2,7 @@ import React from "react";
 import AboutUs from "./Templates/AboutUs";
 import Banner from "./Templates/Banner";
 import OurServices from "./Templates/OurServices";
+import PricingPlan from "./Templates/PricingPlan";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Banner />
       <AboutUs />
       <OurServices />
+      <PricingPlan />
     </>
   );
 }

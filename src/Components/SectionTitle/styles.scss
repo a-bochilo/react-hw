@@ -24,7 +24,6 @@
   flex-flow: column;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 110px;
   h2 {
     @include fontstyle($main-font, 36, 49, $font-color-dark, 700);
   }

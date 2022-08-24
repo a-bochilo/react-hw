@@ -1,22 +1,21 @@
 @import "../../reset";
 @import "../../variables";
 
-.our-services-section {
-  background-color: $services-section-bg;
+.pricing-plan-section {
+  background-color: $pricing-plan-section-bg;
   &__container {
     max-width: $desktop-width;
-    min-height: 1505px;
+    min-height: 1140px;
     margin: auto;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: space-evenly;
   }
-  &__services-holder {
-    min-height: 923px;
+  &__plans-holder {
+    min-width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: space-between;
+    justify-content: space-between;
   }
 }

@@ -33,10 +33,11 @@
     background-color: $btn-bg-color-inactive;
     margin: 19px;
     &:hover {
-      border: none;
+      border-color: transparent;
       background-color: $btn-bg-color-active;
+      color: $font-color-light;
     }
-   &.focus {
+    &.focus {
       border: 2px solid $btn-border-color-light;
       @include fontstyle($main-font, 20, 22, $font-color-light, 600);
     }

@@ -1,40 +1,15 @@
 import React from "react";
-import ButtonComponent from "../ButtonComponent";
 import CardInfo from "../CardInfo";
 import ModalComponent from "../ModalComponent";
 
 import "./styles.scss";
 
 const Service = ({ title, subtitle, iconImg, btnLabel, btnClass }) => {
-  function addFocusClass(e) {
-    const children = e.target.closest(".service").childNodes;
-    children.forEach((item) => {
-      item.classList.add("focus");
-    });
-  }
-
-  function removeFocusClass(e) {
-    const children = e.target.closest(".service").childNodes;
-    children.forEach((item) => {
-      item.classList.remove("focus");
-    });
-  }
-
   return (
-    <div
-      className="service"
-      onMouseEnter={addFocusClass}
-      onMouseLeave={removeFocusClass}
-      onBlur={removeFocusClass}
-    >
+    <div className="service">
       <CardInfo iconImg={iconImg} title={title} subtitle={subtitle} />
-
-      {/* <ButtonComponent
-        btnLabel={btnLabel}
-        btnClass={btnClass}
-        onClickFunc={() => console.log("click")}
-      /> */}
       <ModalComponent
+        modalClass="service__modal-custom"
         btnLabel={btnLabel}
         btnClass={btnClass}
         title={title}

@@ -4,7 +4,7 @@ import ButtonComponent from "../ButtonComponent";
 
 import "./styles.scss";
 
-function ModalComponent({ title, subtitle, btnLabel, btnClass }) {
+function ModalComponent({ title, subtitle, btnLabel, btnClass, modalClass }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -22,7 +22,7 @@ function ModalComponent({ title, subtitle, btnLabel, btnClass }) {
         show={show}
         onHide={handleClose}
         animation={true}
-        dialogClassName="modal-custom"
+        dialogClassName={modalClass}
       >
         <h3>{title}</h3>
         <p className="m-4">

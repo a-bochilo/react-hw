@@ -7,6 +7,20 @@ import { OUR_SERVICES_DATA } from "./constants";
 import "./styles.scss";
 
 const OurServices = () => {
+  function addFocusClass(e) {
+    const children = e.target.closest(".service").childNodes;
+    children.forEach((item) => {
+      item.classList.add("focus");
+    });
+  }
+
+  function removeFocusClass(e) {
+    const children = e.target.closest(".service").childNodes;
+    children.forEach((item) => {
+      item.classList.remove("focus");
+    });
+  }
+
   return (
     <section className="our-services-section">
       <div className="our-services-section__container">
@@ -15,7 +29,12 @@ const OurServices = () => {
           subtitle={OUR_SERVICES_DATA.sectionTitle.subtitle}
           titleClass={OUR_SERVICES_DATA.sectionTitle.titleClass}
         />
-        <div className="our-services-section__services-holder">
+        <div
+          className="our-services-section__services-holder"
+          onMouseOver={addFocusClass}
+          onMouseOut={removeFocusClass}
+          onBlur={removeFocusClass}
+        >
           {OUR_SERVICES_DATA.serviceInfo.map(
             ({ id, title, subtitle, iconImg, btnLabel, btnClass }) => (
               <Service
