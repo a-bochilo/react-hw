@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/react-hw/static/css/main.37ac5be0.css",
-    "main.js": "/react-hw/static/js/main.b8ec2345.js",
+    "main.css": "/react-hw/static/css/main.1497d138.css",
+    "main.js": "/react-hw/static/js/main.6be4ee52.js",
     "static/media/bgImg.jpg": "/react-hw/static/media/bgImg.293422b35e34601cb26f.jpg",
     "static/media/internet.svg": "/react-hw/static/media/internet.396c25509059b28f3e9fe1a3ee6d2c2d.svg",
     "static/media/transfer.svg": "/react-hw/static/media/transfer.7d77ba575271206cd06e9361873fa2d0.svg",
     "static/media/head.svg": "/react-hw/static/media/head.2b671fb38f21cfac8643f5ab333288a0.svg",
+    "static/media/smartphone-black.svg": "/react-hw/static/media/smartphone-black.d03037863eb3d255268b11dccca3652c.svg",
     "static/media/arrowDown.svg": "/react-hw/static/media/arrowDown.cf07305bf23e30375406.svg",
     "index.html": "/react-hw/index.html",
-    "main.37ac5be0.css.map": "/react-hw/static/css/main.37ac5be0.css.map",
-    "main.b8ec2345.js.map": "/react-hw/static/js/main.b8ec2345.js.map"
+    "main.1497d138.css.map": "/react-hw/static/css/main.1497d138.css.map",
+    "main.6be4ee52.js.map": "/react-hw/static/js/main.6be4ee52.js.map"
   },
   "entrypoints": [
-    "static/css/main.37ac5be0.css",
-    "static/js/main.b8ec2345.js"
+    "static/css/main.1497d138.css",
+    "static/js/main.6be4ee52.js"
   ]
 }
