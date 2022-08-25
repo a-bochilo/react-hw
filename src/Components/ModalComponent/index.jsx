@@ -1,12 +1,21 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Modal from "react-bootstrap/Modal";
 import { ServiceDataAndState } from "../../Templates/OurServices";
 import ButtonComponent from "../ButtonComponent";
+import LoaderComponent from "../LoaderComponent";
 
 import "./styles.scss";
 
 function ModalComponent({ id, title, subtitle, modalClass, imgLg }) {
   const [show, setShow] = useState(false);
+  const [imgURL, setImgUrl] = useState();
+  useEffect(() => {
+    fetch(imgLg)
+      .then((response) => response.blob())
+      .then((image) => {
+        setImgUrl(URL.createObjectURL(image));
+      });
+  });
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -32,7 +41,8 @@ function ModalComponent({ id, title, subtitle, modalClass, imgLg }) {
           <h3>{title}</h3>
           <div className="row">
             <div className="col-lg-4">
-              <img src={imgLg} alt="img" />
+              {!imgURL && <LoaderComponent />}
+              {imgURL && <img src={imgURL} alt="img" />}
             </div>
             <div className="col-lg-8">
               <p className="m-4">
