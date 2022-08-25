@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/react-hw/static/css/main.8e17b73d.css",
-    "main.js": "/react-hw/static/js/main.d4a9bd33.js",
+    "main.css": "/react-hw/static/css/main.e66b1cf4.css",
+    "main.js": "/react-hw/static/js/main.936aed45.js",
     "static/media/bgImg.jpg": "/react-hw/static/media/bgImg.293422b35e34601cb26f.jpg",
     "static/media/logo.svg": "/react-hw/static/media/logo.73a045353541a2dab9346abe78c762ea.svg",
     "static/media/internet.svg": "/react-hw/static/media/internet.396c25509059b28f3e9fe1a3ee6d2c2d.svg",
     "static/media/transfer.svg": "/react-hw/static/media/transfer.7d77ba575271206cd06e9361873fa2d0.svg",
     "static/media/head.svg": "/react-hw/static/media/head.2b671fb38f21cfac8643f5ab333288a0.svg",
+    "static/media/smartphone-white.svg": "/react-hw/static/media/smartphone-white.3f39e41f8cf2bc8395edf2cc824fd8d3.svg",
     "static/media/smartphone-black.svg": "/react-hw/static/media/smartphone-black.d03037863eb3d255268b11dccca3652c.svg",
     "static/media/google-icon.svg": "/react-hw/static/media/google-icon.833bd0376ce3748bdf5cf935b29c7e3b.svg",
     "static/media/arrowDown.svg": "/react-hw/static/media/arrowDown.cf07305bf23e30375406.svg",
     "static/media/twitter-icon.svg": "/react-hw/static/media/twitter-icon.694b865e1569c14aa43884b797ccce0b.svg",
     "static/media/fb-icon.svg": "/react-hw/static/media/fb-icon.5f78fb0063fc31275717b99d7ec1df4e.svg",
     "index.html": "/react-hw/index.html",
-    "main.8e17b73d.css.map": "/react-hw/static/css/main.8e17b73d.css.map",
-    "main.d4a9bd33.js.map": "/react-hw/static/js/main.d4a9bd33.js.map"
+    "main.e66b1cf4.css.map": "/react-hw/static/css/main.e66b1cf4.css.map",
+    "main.936aed45.js.map": "/react-hw/static/js/main.936aed45.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e17b73d.css",
-    "static/js/main.d4a9bd33.js"
+    "static/css/main.e66b1cf4.css",
+    "static/js/main.936aed45.js"
   ]
 }
