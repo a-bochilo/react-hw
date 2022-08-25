@@ -10,11 +10,16 @@ function ModalComponent({ id, title, subtitle, modalClass, imgLg }) {
   const [show, setShow] = useState(false);
   const [imgURL, setImgUrl] = useState();
   useEffect(() => {
-    fetch(imgLg)
-      .then((response) => response.blob())
-      .then((image) => {
+    const fetchImg = async () => {
+      try {
+        const response = await fetch(imgLg);
+        const image = await response.blob();
         setImgUrl(URL.createObjectURL(image));
-      });
+      } catch (err) {
+        console.error(err);
+      }
+    };
+    fetchImg();
   });
 
   const handleClose = () => setShow(false);
