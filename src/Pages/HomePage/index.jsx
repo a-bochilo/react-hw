@@ -3,6 +3,7 @@ import AboutUs from "../../Templates/AboutUs";
 import Banner from "../../Templates/Banner";
 import OurServices from "../../Templates/OurServices";
 import PricingPlan from "../../Templates/PricingPlan";
+import Team from "../../Templates/Team";
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <AboutUs />
       <OurServices />
       <PricingPlan />
+      <Team />
     </>
   );
 };

@@ -1,8 +1,8 @@
 @import "../../reset";
 @import "../../variables";
 
-.our-services-section {
-  background-color: $services-section-bg;
+.team-section {
+  background-color: $card-bg-color;
   &__container {
     max-width: $desktop-width;
     margin: auto;
