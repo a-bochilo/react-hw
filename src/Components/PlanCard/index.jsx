@@ -1,5 +1,6 @@
 import React from "react";
 import ButtonComponent from "../ButtonComponent";
+import { useDispatch, useSelector } from "react-redux";
 
 import "./styles.scss";
 
@@ -13,13 +14,25 @@ const PlanCard = ({
   btnLabel,
   btnClass,
 }) => {
+  const dispatch = useDispatch();
+  const count = useSelector((state) => state.count);
+
+  const changeCount = (value) => {
+    if (count % 2 === 0) {
+      dispatch({ type: "ADD_DATA", payload: value });
+    } else {
+      dispatch({ type: "REMOVE_DATA", payload: value - 2 });
+    }
+  };
+
   return (
     <div className="plan">
       <div className="plan__header">
         <h3> {cardTitle} </h3>
         <p>
           <span className="plan__currency">$</span>
-          {price}<span className="plan__period"> per month</span>
+          {price} {count}
+          <span className="plan__period"> per month</span>
         </p>
       </div>
       <div className="plan__body">
@@ -29,7 +42,11 @@ const PlanCard = ({
           <p>{enabledTech}</p>
           <p>{support}</p>
         </div>
-        <ButtonComponent btnLabel={btnLabel} btnClass={btnClass} />
+        <ButtonComponent
+          btnLabel={btnLabel}
+          btnClass={btnClass}
+          onClickFunc={() => changeCount(5)}
+        />
       </div>
     </div>
   );

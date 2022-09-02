@@ -6,6 +6,7 @@ import Layout from "./Pages/Layout";
 import AboutUs from "./Templates/AboutUs";
 import OurServices from "./Templates/OurServices";
 import PricingPlan from "./Templates/PricingPlan";
+import Team from "./Templates/Team";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/react-hw/about" element={<AboutUs />} />
           <Route path="/react-hw//servicing" element={<OurServices />} />
           <Route path="/react-hw//pricing" element={<PricingPlan />} />
+          <Route path="/react-hw//team" element={<Team />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>
