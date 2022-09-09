@@ -24,6 +24,8 @@ const reducer = (state = initialState, action) => {
 
 const store = configureStore({ reducer });
 
+console.log(`${ 3 + 7 - '2' + 5}`)
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
