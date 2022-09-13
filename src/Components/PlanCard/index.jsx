@@ -1,6 +1,5 @@
 import React from "react";
 import ButtonComponent from "../ButtonComponent";
-import { useDispatch, useSelector } from "react-redux";
 
 import "./styles.scss";
 
