@@ -5,6 +5,7 @@ import Blog from "../../Templates/Blog";
 import OurServices from "../../Templates/OurServices";
 import PricingPlan from "../../Templates/PricingPlan";
 import Team from "../../Templates/Team";
+import Team from "../../Templates/Team";
 
 const HomePage = () => {
   return (
