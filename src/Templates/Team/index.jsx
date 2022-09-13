@@ -25,21 +25,25 @@ const Team = () => {
   }, []);
 
   return (
-    <section className="team-section">
+    <section className="team-section pt-5">
       <div className="team-section__container">
         <SectionTitle
           title={TEAM_DATA.sectionTitle.title}
           subtitle={TEAM_DATA.sectionTitle.subtitle}
           titleClass={TEAM_DATA.sectionTitle.titleClass}
         />
-        <div className="team-section__team-holder row">
+        <div className="team-section__team-holder row pt-5">
           {data &&
-            data.map(({ id, name, address }, i) => (
+            data.map(({ id, name, address, phone, email, username }, i) => (
               <TeamMember
                 key={id}
                 avatar={TEAM_DATA.photos[i]}
                 name={name}
                 city={address.city}
+                phone={phone}
+                email={email}
+                username={username}
+                icons={TEAM_DATA.icons}
               />
             ))}
         </div>
