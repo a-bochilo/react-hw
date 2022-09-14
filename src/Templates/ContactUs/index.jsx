@@ -6,7 +6,6 @@ import Button from "react-bootstrap/Button";
 import { CONTACT_DATA } from "./constants";
 
 import "./styles.scss";
-import ButtonComponent from "../../Components/ButtonComponent";
 
 const ContactUs = () => {
   return (
