@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-hw/static/css/main.29c1f13e.css",
-    "main.js": "/react-hw/static/js/main.b25425fb.js",
+    "main.css": "/react-hw/static/css/main.432df250.css",
+    "main.js": "/react-hw/static/js/main.102c8499.js",
     "static/media/bgImg.jpg": "/react-hw/static/media/bgImg.293422b35e34601cb26f.jpg",
     "static/media/img2.jpg": "/react-hw/static/media/img2.9db0241de8b2c3e4d7ee.jpg",
     "static/media/img3.jpg": "/react-hw/static/media/img3.44b8a5f124e432e4b8de.jpg",
@@ -13,24 +13,27 @@
     "static/media/internet.svg": "/react-hw/static/media/internet.396c25509059b28f3e9fe1a3ee6d2c2d.svg",
     "static/media/transfer.svg": "/react-hw/static/media/transfer.7d77ba575271206cd06e9361873fa2d0.svg",
     "static/media/head.svg": "/react-hw/static/media/head.2b671fb38f21cfac8643f5ab333288a0.svg",
+    "static/media/geolocation.svg": "/react-hw/static/media/geolocation.a496bc51f4ea1cdb1b36b89dafe3cbc8.svg",
+    "static/media/phone.svg": "/react-hw/static/media/phone.c37dbf92a42b7a44e7f3ed1416e3b19d.svg",
     "static/media/smartphone-white.svg": "/react-hw/static/media/smartphone-white.3f39e41f8cf2bc8395edf2cc824fd8d3.svg",
     "static/media/smartphone-black.svg": "/react-hw/static/media/smartphone-black.d03037863eb3d255268b11dccca3652c.svg",
-    "static/media/dribble.svg": "/react-hw/static/media/dribble.b249dda585b1604fa7cbba3f7e604e9c.svg",
-    "static/media/chat.svg": "/react-hw/static/media/chat.3304f508d59e437f8c7d57a035f06cf3.svg",
-    "static/media/twitter.svg": "/react-hw/static/media/twitter.582a565b301bdc0769e21b328d8ff44c.svg",
-    "static/media/calendar.svg": "/react-hw/static/media/calendar.7ade2457acd0a9824fe75f51efb92f12.svg",
+    "static/media/email.svg": "/react-hw/static/media/email.e4b4c0b572952bfe6f7a6c8029378ea4.svg",
+    "static/media/dribble.svg": "/react-hw/static/media/dribble.3f1bb16eb42206eb35e650dd7df58e43.svg",
+    "static/media/chat.svg": "/react-hw/static/media/chat.fd3081fdd106c89abf673e4026263c67.svg",
+    "static/media/twitter.svg": "/react-hw/static/media/twitter.0c1f560790a81d62b45379270dbaa512.svg",
+    "static/media/calendar.svg": "/react-hw/static/media/calendar.1829601859f17c54d34802a91d770023.svg",
     "static/media/google-icon.svg": "/react-hw/static/media/google-icon.833bd0376ce3748bdf5cf935b29c7e3b.svg",
-    "static/media/fb.svg": "/react-hw/static/media/fb.2a6a724dfd087284d10835cdb2c7e4f8.svg",
+    "static/media/fb.svg": "/react-hw/static/media/fb.ce6575dc30b69209cbb1d62c21f7856d.svg",
     "static/media/arrowDown.svg": "/react-hw/static/media/arrowDown.cf07305bf23e30375406.svg",
+    "static/media/doc.svg": "/react-hw/static/media/doc.fc0408252fe29ab9aaae640d563c0456.svg",
     "static/media/twitter-icon.svg": "/react-hw/static/media/twitter-icon.694b865e1569c14aa43884b797ccce0b.svg",
-    "static/media/doc.svg": "/react-hw/static/media/doc.d3a086e37f33489990fd5eece5284e8c.svg",
     "static/media/fb-icon.svg": "/react-hw/static/media/fb-icon.5f78fb0063fc31275717b99d7ec1df4e.svg",
     "index.html": "/react-hw/index.html",
-    "main.29c1f13e.css.map": "/react-hw/static/css/main.29c1f13e.css.map",
-    "main.b25425fb.js.map": "/react-hw/static/js/main.b25425fb.js.map"
+    "main.432df250.css.map": "/react-hw/static/css/main.432df250.css.map",
+    "main.102c8499.js.map": "/react-hw/static/js/main.102c8499.js.map"
   },
   "entrypoints": [
-    "static/css/main.29c1f13e.css",
-    "static/js/main.b25425fb.js"
+    "static/css/main.432df250.css",
+    "static/js/main.102c8499.js"
   ]
 }
