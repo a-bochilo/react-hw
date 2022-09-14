@@ -2,12 +2,15 @@ import React from "react";
 import SectionTitle from "../../Components/SectionTitle";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { useDispatch } from "react-redux";
 
 import { CONTACT_DATA } from "./constants";
 
 import "./styles.scss";
 
 const ContactUs = () => {
+  const dispatch = useDispatch();
+
   return (
     <section className="contact-section pt-5">
       <div className="contact-section__container">
@@ -81,6 +84,9 @@ const ContactUs = () => {
                 variant="primary"
                 type="primary"
                 className="col-10 col-sm-2 p-4 contact-section__btn"
+                onClick={() => {
+                  
+                }}
               >
                 SEND
               </Button>
