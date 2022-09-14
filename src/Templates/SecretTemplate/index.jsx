@@ -8,7 +8,7 @@ import { SECRET_DATA } from "./constants";
 import "./styles.scss";
 
 const SecretTeamplate = () => {
-  const formData = useSelector((state) => state.reducer);
+  const formData = useSelector((state) => state.name);
 
   return (
     <section className="secret-section pt-5">
@@ -23,7 +23,8 @@ const SecretTeamplate = () => {
             <div className="row col-12">
               <div className="col-12 col-sm-6 p-4">
                 <Form.Control
-                  value={formData.name}
+                  readOnly
+                  value={formData}
                   size="lg"
                   type="text"
                   className="m-4 p-3"

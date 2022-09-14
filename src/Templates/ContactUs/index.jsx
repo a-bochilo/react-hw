@@ -5,8 +5,7 @@ import Button from "react-bootstrap/Button";
 import { useDispatch } from "react-redux";
 import { useState } from "react";
 import { formDataAC } from "../../Store/ActionCreators";
-// import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux/es/exports";
+import { useNavigate } from "react-router-dom";
 
 import { CONTACT_DATA } from "./constants";
 
@@ -17,10 +16,9 @@ const ContactUs = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
-  const data = useSelector((state) => state.reducer);
 
   const dispatch = useDispatch();
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const sendFormData = () => {
     const formData = {
@@ -31,8 +29,7 @@ const ContactUs = () => {
     };
 
     dispatch(formDataAC(formData));
-    // navigate("/react-hw/secret-page");
-    console.log(data);
+    navigate("/react-hw/secret-page");
   };
 
   return (
