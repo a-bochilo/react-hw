@@ -19,6 +19,7 @@ const Blog = () => {
             BLOG_DATA.posts.map(
               ({ img, title, date, author, paragraph }, i) => (
                 <div
+                  key={i}
                   className={
                     i % 2 === 0
                       ? "col-12 row d-flex flex-row"

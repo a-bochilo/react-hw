@@ -10,8 +10,16 @@ export const CONTACT_DATA = {
     titleClass: "section-title section-title_light",
   },
   contacts: [
-    { icon: geolocation, data: ["Nobinagar savar, Dhaka Bangladesh"] },
-    { icon: phone, data: ["+8801743331996", "+8801928737807"] },
-    { icon: email, data: ["quickmasud@gmail.com", "quickmasud@yahoo.com"] },
+    {
+      icon: geolocation,
+      data: ["Nobinagar savar, Dhaka Bangladesh"],
+      link: "https://goo.gl/maps/uMRobrKGpV32KcVZ8",
+    },
+    { icon: phone, data: ["+8801743331996", "+8801928737807"], link: "tel:" },
+    {
+      icon: email,
+      data: ["quickmasud@gmail.com", "quickmasud@yahoo.com"],
+      link: "mailto:",
+    },
   ],
 };

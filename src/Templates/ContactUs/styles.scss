@@ -2,8 +2,8 @@
 @import "../../variables";
 @import "../../mixins";
 
-.blog-section {
-  background-color: $blog-section-bg;
+.contact-section {
+  background-color: $contact-section-bg;
   &__container {
     max-width: $desktop-width;
     margin: auto;
@@ -13,15 +13,14 @@
     justify-content: space-evenly;
     padding: 50px 0;
   }
-  &__post {
-    h4 {
-      @include fontstyle($main-font, 30, 22, $font-color-dark, 600);
-    }
-    span {
-      @include fontstyle($main-font, 18, 22, $font-color-dark, 600);
-    }
+  &__contact-holder {
     p {
-      @include fontstyle($main-font, 18, 26, $font-color-dark);
+      @include fontstyle($main-font, 22, 30, $font-color-light);
     }
+  }
+  &__btn {
+    @include fontstyle($main-font, 26, 28, $font-color-light, 600);
+    background-color: $btn-bg-color-form;
+    border: none;
   }
 }

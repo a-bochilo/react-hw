@@ -23,7 +23,7 @@ const TeamMember = ({ avatar, name, city, phone, email, username, icons }) => {
                 role="button"
                 className="col-2 team-member__link"
                 onClick={() => {
-                  if ({ link } === "mailto") {
+                  if ({ link } === "mailto:") {
                     window.location.href(`${link}${email}`);
                   } else if ({ link } === "tel:") {
                     window.location.href(`${link}${phone}`);
