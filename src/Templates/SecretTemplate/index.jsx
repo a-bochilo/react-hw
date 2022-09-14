@@ -1,7 +1,7 @@
 import React from "react";
 import SectionTitle from "../../Components/SectionTitle";
 import Form from "react-bootstrap/Form";
-import { useSelector } from "react-redux/es/exports";
+import { useSelector } from "react-redux";
 
 import { SECRET_DATA } from "./constants";
 
