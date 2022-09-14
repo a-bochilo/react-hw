@@ -24,9 +24,9 @@ const TeamMember = ({ avatar, name, city, phone, email, username, icons }) => {
                 className="col-2 team-member__link"
                 onClick={() => {
                   if ({ link } === "mailto:") {
-                    window.location.href(`${link}${email}`);
+                    window.open(`${link}${email}`);
                   } else if ({ link } === "tel:") {
-                    window.location.href(`${link}${phone}`);
+                    window.open(`${link}${phone}`);
                   } else {
                     window.open(`${link}${username}`, "_blank");
                   }

@@ -10,7 +10,7 @@ const initialFormDataState = {
 export const reducer = (state = initialFormDataState, action) => {
   switch (action.type) {
     case "FORM_DATA":
-      return { ...state, action.payload };
+      return { ...state, formData: action.payload };
     default:
       return state;
   }

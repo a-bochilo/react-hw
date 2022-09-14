@@ -8,7 +8,10 @@ import { SECRET_DATA } from "./constants";
 import "./styles.scss";
 
 const SecretTeamplate = () => {
-  const formData = useSelector((state) => state.name);
+  const { name, email, phone, message } = useSelector(
+    (state) => state.formData
+  );
+  const isAdmin = name === "admin" ? true : false;
 
   return (
     <section className="secret-section pt-5">
@@ -24,16 +27,30 @@ const SecretTeamplate = () => {
               <div className="col-12 col-sm-6 p-4">
                 <Form.Control
                   readOnly
-                  value={formData}
+                  value={isAdmin ? name : "You're not allowed"}
                   size="lg"
                   type="text"
                   className="m-4 p-3"
                 />
-                <Form.Control size="lg" type="email" className="m-4 p-3" />
-                <Form.Control size="lg" type="tel" className="m-4 p-3" />
+                <Form.Control
+                  readOnly
+                  value={isAdmin ? email : "You're not allowed"}
+                  size="lg"
+                  type="email"
+                  className="m-4 p-3"
+                />
+                <Form.Control
+                  readOnly
+                  value={isAdmin ? phone : "You're not allowed"}
+                  size="lg"
+                  type="tel"
+                  className="m-4 p-3"
+                />
               </div>
               <div className="col-12 col-sm-6 p-4">
                 <Form.Control
+                  readOnly
+                  value={isAdmin ? message : "You're not allowed"}
                   size="lg"
                   as="textarea"
                   rows={7}

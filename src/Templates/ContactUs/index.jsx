@@ -32,6 +32,15 @@ const ContactUs = () => {
     navigate("/react-hw/secret-page");
   };
 
+  const validationInput = (currentValue) => {
+    if (currentValue !== "admin" && currentValue !== "user") {
+      document.getElementById("validation").classList.remove("d-none");
+      document.getElementById("send-btn").classList.add("disabled");
+    } else {
+      document.getElementById("send-btn").classList.remove("disabled");
+    }
+  };
+
   return (
     <section className="contact-section pt-5">
       <div className="contact-section__container">
@@ -52,12 +61,12 @@ const ContactUs = () => {
                       role="button"
                       className="col-12 p-0 m-0"
                       onClick={() => {
-                        if ({ link } === "mailto:") {
-                          window.location.href(`${link} ${item}`);
-                        } else if ({ link } === "tel:") {
-                          window.location.href(`${link} ${item}`);
+                        if (link === "mailto:") {
+                          window.open(`${link} ${item}`);
+                        } else if (link === "tel:") {
+                          window.open(`${link} ${item}`);
                         } else {
-                          window.open({ link }, "_blank");
+                          window.open(link, "_blank");
                         }
                       }}
                     >
@@ -76,7 +85,16 @@ const ContactUs = () => {
                   type="text"
                   placeholder="YOUR NAME"
                   className="m-4 p-3"
-                  onBlur={(e) => setName(e.target.value)}
+                  onBlur={(e) => {
+                    const currentValue = e.target.value.trim().toLowerCase();
+                    setName(currentValue);
+                    validationInput(currentValue);
+                  }}
+                  onFocus={(e) => {
+                    document
+                      .getElementById("validation")
+                      .classList.add("d-none");
+                  }}
                 />
                 <Form.Control
                   size="lg"
@@ -105,10 +123,17 @@ const ContactUs = () => {
               </div>
             </div>
             <div className="text-center ">
+              <p
+                className="col-12 col-sm-12 contact-section__validation d-none"
+                id="validation"
+              >
+                Wrong name
+              </p>
               <Button
+                id="send-btn"
                 variant="primary"
                 type="primary"
-                className="col-10 col-sm-2 p-4 contact-section__btn"
+                className="col-12 col-sm-2 p-4 contact-section__btn"
                 onClick={sendFormData}
               >
                 SEND

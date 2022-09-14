@@ -23,4 +23,7 @@
     background-color: $btn-bg-color-form;
     border: none;
   }
+  &__validation {
+    @include fontstyle($main-font, 26, 28, $font-color-error, 600);
+  }
 }
