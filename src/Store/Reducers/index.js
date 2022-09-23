@@ -33,4 +33,7 @@ const fetchBlogsReducer = (state = initialBlogsState, action) => {
   }
 };
 
-export const rootReducer = combineReducers({ formDataReducer });
+export const rootReducer = combineReducers({
+  formDataReducer,
+  fetchBlogsReducer,
+});
