@@ -1,3 +1,5 @@
+import { combineReducers } from "redux";
+
 const initialFormDataState = {
   formData: {
     name: "",
@@ -7,7 +9,7 @@ const initialFormDataState = {
   },
 };
 
-export const reducer = (state = initialFormDataState, action) => {
+const formDataReducer = (state = initialFormDataState, action) => {
   switch (action.type) {
     case "FORM_DATA":
       return { ...state, formData: action.payload };
@@ -15,3 +17,7 @@ export const reducer = (state = initialFormDataState, action) => {
       return state;
   }
 };
+
+export const rootReducer = combineReducers(
+  formDataReducer;
+);
