@@ -1,11 +1,17 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import ButtonComponent from "../../Components/ButtonComponent";
 import SectionTitle from "../../Components/SectionTitle";
+import { fetchBlogsMiddleWare } from "../../Store/MiddleWare";
 
 import { BLOG_DATA } from "./constants";
 
 import "./styles.scss";
 
 const Blog = () => {
+  const fetchBlogs = fetchBlogsMiddleWare();
+  const dispatch = useDispatch();
+
   return (
     <section className="blog-section pt-5">
       <div className="blog-section__container">
@@ -53,6 +59,11 @@ const Blog = () => {
               )
             )}
         </div>
+        <ButtonComponent
+          btnLabel={BLOG_DATA.btn.btnLabel}
+          btnClass={BLOG_DATA.btn.btnClass}
+          onClickFunc={() => fetchBlogs(dispatch)}
+        />
       </div>
     </section>
   );
