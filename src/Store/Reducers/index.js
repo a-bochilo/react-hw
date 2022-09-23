@@ -18,6 +18,19 @@ const formDataReducer = (state = initialFormDataState, action) => {
   }
 };
 
-export const rootReducer = combineReducers(
-  formDataReducer;
-);
+const initialBlogsState = {
+  blogs: [],
+};
+
+const fetchBlogsReducer = (state = initialBlogsState, action) => {
+  switch (action.type) {
+    case "FETCH_BLOGS_SUCCESS":
+      return { ...state, blogs: action.payload };
+    case "FETCH_BLOGS_FAILURE":
+      return { ...state, blogs: [] };
+    default:
+      return state;
+  }
+};
+
+export const rootReducer = combineReducers({ formDataReducer });
